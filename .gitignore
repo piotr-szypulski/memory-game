@@ -1,0 +1,6 @@
+.DS_Store
+.env
+.eslintcache
+dist
+node_modules
+yarn-error.log
