@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb/hooks"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "parser": "@babel/eslint-parser",
+    "plugins": [
+        "react",
+        "react-hooks",
+        "jsx-a11y",
+        "import"
+    ],
+    "settings": {
+        "import/resolver": "webpack"
+    }
+}
