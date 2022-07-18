@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest/globals": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -20,9 +21,19 @@
         "react",
         "react-hooks",
         "jsx-a11y",
-        "import"
+        "import",
+        "jest"
     ],
     "settings": {
         "import/resolver": "webpack"
+    },
+    "rules": {
+        "no-param-reassign": "off", // Conflicts with Immer in redux-toolkit
+        "no-restricted-exports": [
+            "off",
+            {
+                "restrictedNamedExports": ["default"]
+            }
+        ]
     }
 }

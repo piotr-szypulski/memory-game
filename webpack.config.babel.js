@@ -8,7 +8,14 @@ import 'dotenv/config';
 const isProduction = process.env.npm_lifecycle_event === 'prod';
 
 const alias = {
-  components: path.resolve(__dirname, 'src/components'),
+  '@components': path.resolve(__dirname, 'src/components'),
+  '@config': path.resolve(__dirname, 'src/config.js'),
+  '@features': path.resolve(__dirname, 'src/features'),
+  '@hooks': path.resolve(__dirname, 'src/hooks'),
+  '@services': path.resolve(__dirname, 'src/services'),
+  '@store': path.resolve(__dirname, 'src/store'),
+  '@tests': path.resolve(__dirname, 'src/tests'),
+  '@utilities': path.resolve(__dirname, 'src/utilities'),
 };
 
 const htmlTemplateConfiguration = {

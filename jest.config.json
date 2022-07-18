@@ -1,0 +1,17 @@
+{
+  "moduleNameMapper": {
+    "^@components/(.*)$":  "<rootDir>/src/components/$1",
+    "^@config$":  "<rootDir>/src/config.js",
+    "^@features/(.*)$":  "<rootDir>/src/features/$1",
+    "^@hooks/(.*)$":  "<rootDir>/src/hooks/$1",
+    "^@services/(.*)$":  "<rootDir>/src/services/$1",
+    "^@store/(.*)$":  "<rootDir>/src/store/$1",
+    "^@tests/(.*)$":  "<rootDir>/src/tests/$1",
+    "^@utilities/(.*)$":  "<rootDir>/src/utilities/$1"
+  },
+  "setupFilesAfterEnv": [
+    "./jest.setup.js"
+  ],
+  "testEnvironment": "jest-environment-jsdom",
+  "verbose": true
+}
