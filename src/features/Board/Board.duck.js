@@ -90,6 +90,7 @@ const extraReducers = (builder) => {
     .addCase(fetchBoard.fulfilled, (state, action) => {
       state.cardBackImage = action.payload.cardBackImageUrl;
       state.cards = generateBoard({ imageUrls: action.payload.cardFaceImageUrls });
+      state.cardFlips = 0;
     });
 };
 
