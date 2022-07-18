@@ -1,6 +1,6 @@
 .DS_Store
 .env
 .eslintcache
-dist
+build
 node_modules
 yarn-error.log

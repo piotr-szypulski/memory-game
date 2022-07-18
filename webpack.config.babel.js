@@ -33,6 +33,7 @@ const developmentConfiguration = {
 const productionConfiguration = {
   output: {
     clean: true,
+    path: path.resolve(__dirname, 'build'),
   },
   /**
    * Production optimizations
